@@ -1,0 +1,519 @@
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker-compose run php composer create-project --prefer-dist laravel/laravel .
+Creating a "laravel/laravel" project at "./"
+Info from https://repo.packagist.org: #StandWithUkraine
+Cannot use laravel/laravel's latest version v10.2.5 as it requires php ^8.1 which is not satisfied by your platform.
+Installing laravel/laravel (v8.6.12)
+  - Downloading laravel/laravel (v8.6.12)
+  - Installing laravel/laravel (v8.6.12): Extracting archive
+Created project in /var/www/html/.
+> @php -r "file_exists('.env') || copy('.env.example', '.env');"
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 102 installs, 0 updates, 0 removals
+  - Locking asm89/stack-cors (v2.1.1)
+  - Locking brick/math (0.9.3)
+  - Locking doctrine/inflector (2.0.8)
+  - Locking doctrine/instantiator (1.5.0)
+  - Locking doctrine/lexer (1.2.3)
+  - Locking dragonmantank/cron-expression (v3.3.3)
+  - Locking egulias/email-validator (2.1.25)
+  - Locking facade/flare-client-php (1.10.0)
+  - Locking facade/ignition (2.17.7)
+  - Locking facade/ignition-contracts (1.0.2)
+  - Locking fakerphp/faker (v1.20.0)
+  - Locking filp/whoops (2.15.3)
+  - Locking fruitcake/laravel-cors (v2.2.0)
+  - Locking graham-campbell/result-type (v1.1.1)
+  - Locking guzzlehttp/guzzle (7.7.0)
+  - Locking guzzlehttp/promises (2.0.1)
+  - Locking guzzlehttp/psr7 (2.6.0)
+  - Locking hamcrest/hamcrest-php (v2.0.1)
+  - Locking laravel/framework (v8.83.27)
+  - Locking laravel/sail (v1.19.0)
+  - Locking laravel/sanctum (v2.15.1)
+  - Locking laravel/serializable-closure (v1.3.1)
+  - Locking laravel/tinker (v2.8.1)
+  - Locking league/commonmark (1.6.7)
+  - Locking league/flysystem (1.1.10)
+  - Locking league/mime-type-detection (1.12.0)
+  - Locking mockery/mockery (1.6.6)
+  - Locking monolog/monolog (2.9.1)
+  - Locking myclabs/deep-copy (1.11.1)
+  - Locking nesbot/carbon (2.68.1)
+  - Locking nikic/php-parser (v4.16.0)
+  - Locking nunomaduro/collision (v5.11.0)
+  - Locking opis/closure (3.6.3)
+  - Locking phar-io/manifest (2.0.3)
+  - Locking phar-io/version (3.2.1)
+  - Locking phpoption/phpoption (1.9.1)
+  - Locking phpunit/php-code-coverage (9.2.27)
+  - Locking phpunit/php-file-iterator (3.0.6)
+  - Locking phpunit/php-invoker (3.1.1)
+  - Locking phpunit/php-text-template (2.0.4)
+  - Locking phpunit/php-timer (5.0.3)
+  - Locking phpunit/phpunit (9.6.10)
+  - Locking psr/container (1.1.1)
+  - Locking psr/event-dispatcher (1.0.0)
+  - Locking psr/http-client (1.0.2)
+  - Locking psr/http-factory (1.0.2)
+  - Locking psr/http-message (2.0)
+  - Locking psr/log (1.1.4)
+  - Locking psr/simple-cache (1.0.1)
+  - Locking psy/psysh (v0.11.20)
+  - Locking ralouphie/getallheaders (3.0.3)
+  - Locking ramsey/collection (1.2.2)
+  - Locking ramsey/uuid (4.2.3)
+  - Locking sebastian/cli-parser (1.0.1)
+  - Locking sebastian/code-unit (1.0.8)
+  - Locking sebastian/code-unit-reverse-lookup (2.0.3)
+  - Locking sebastian/comparator (4.0.8)
+  - Locking sebastian/complexity (2.0.2)
+  - Locking sebastian/diff (4.0.5)
+  - Locking sebastian/environment (5.1.5)
+  - Locking sebastian/exporter (4.0.5)
+  - Locking sebastian/global-state (5.0.6)
+  - Locking sebastian/lines-of-code (1.0.3)
+  - Locking sebastian/object-enumerator (4.0.4)
+  - Locking sebastian/object-reflector (2.0.4)
+  - Locking sebastian/recursion-context (4.0.5)
+  - Locking sebastian/resource-operations (3.0.3)
+  - Locking sebastian/type (3.2.1)
+  - Locking sebastian/version (3.0.2)
+  - Locking swiftmailer/swiftmailer (v6.3.0)
+  - Locking symfony/console (v5.4.26)
+  - Locking symfony/css-selector (v5.4.26)
+  - Locking symfony/deprecation-contracts (v2.5.2)
+  - Locking symfony/error-handler (v5.4.26)
+  - Locking symfony/event-dispatcher (v5.4.26)
+  - Locking symfony/event-dispatcher-contracts (v2.5.2)
+  - Locking symfony/finder (v5.4.27)
+  - Locking symfony/http-foundation (v5.4.26)
+  - Locking symfony/http-kernel (v5.4.27)
+  - Locking symfony/mime (v5.4.26)
+  - Locking symfony/polyfill-ctype (v1.27.0)
+  - Locking symfony/polyfill-iconv (v1.27.0)
+  - Locking symfony/polyfill-intl-grapheme (v1.27.0)
+  - Locking symfony/polyfill-intl-idn (v1.27.0)
+  - Locking symfony/polyfill-intl-normalizer (v1.27.0)
+  - Locking symfony/polyfill-mbstring (v1.27.0)
+  - Locking symfony/polyfill-php72 (v1.27.0)
+  - Locking symfony/polyfill-php73 (v1.27.0)
+  - Locking symfony/polyfill-php80 (v1.27.0)
+  - Locking symfony/polyfill-php81 (v1.27.0)
+  - Locking symfony/process (v5.4.26)
+  - Locking symfony/routing (v5.4.26)
+  - Locking symfony/service-contracts (v2.5.2)
+  - Locking symfony/string (v5.4.26)
+  - Locking symfony/translation (v5.4.24)
+  - Locking symfony/translation-contracts (v2.5.2)
+  - Locking symfony/var-dumper (v5.4.26)
+  - Locking theseer/tokenizer (1.2.1)
+  - Locking tijsverkoyen/css-to-inline-styles (2.2.6)
+  - Locking vlucas/phpdotenv (v5.5.0)
+  - Locking voku/portable-ascii (1.6.1)
+  - Locking webmozart/assert (1.11.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 102 installs, 0 updates, 0 removals
+  - Downloading doctrine/inflector (2.0.8)
+  - Downloading doctrine/lexer (1.2.3)
+  - Downloading symfony/polyfill-ctype (v1.27.0)
+  - Downloading webmozart/assert (1.11.0)
+  - Downloading dragonmantank/cron-expression (v3.3.3)
+  - Downloading symfony/polyfill-php80 (v1.27.0)
+  - Downloading symfony/polyfill-mbstring (v1.27.0)
+  - Downloading symfony/var-dumper (v5.4.26)
+  - Downloading symfony/polyfill-intl-normalizer (v1.27.0)
+  - Downloading symfony/polyfill-intl-grapheme (v1.27.0)
+  - Downloading symfony/string (v5.4.26)
+  - Downloading symfony/deprecation-contracts (v2.5.2)
+  - Downloading psr/container (1.1.1)
+  - Downloading symfony/service-contracts (v2.5.2)
+  - Downloading symfony/polyfill-php73 (v1.27.0)
+  - Downloading symfony/console (v5.4.26)
+  - Downloading psr/log (1.1.4)
+  - Downloading monolog/monolog (2.9.1)
+  - Downloading voku/portable-ascii (1.6.1)
+  - Downloading phpoption/phpoption (1.9.1)
+  - Downloading graham-campbell/result-type (v1.1.1)
+  - Downloading vlucas/phpdotenv (v5.5.0)
+  - Downloading symfony/css-selector (v5.4.26)
+  - Downloading tijsverkoyen/css-to-inline-styles (2.2.6)
+  - Downloading symfony/routing (v5.4.26)
+  - Downloading symfony/process (v5.4.26)
+  - Downloading symfony/polyfill-php72 (v1.27.0)
+  - Downloading symfony/polyfill-intl-idn (v1.27.0)
+  - Downloading symfony/mime (v5.4.26)
+  - Downloading symfony/http-foundation (v5.4.26)
+  - Downloading psr/event-dispatcher (1.0.0)
+  - Downloading symfony/event-dispatcher-contracts (v2.5.2)
+  - Downloading symfony/event-dispatcher (v5.4.26)
+  - Downloading symfony/error-handler (v5.4.26)
+  - Downloading symfony/http-kernel (v5.4.27)
+  - Downloading symfony/finder (v5.4.27)
+  - Downloading symfony/polyfill-iconv (v1.27.0)
+  - Downloading egulias/email-validator (2.1.25)
+  - Downloading swiftmailer/swiftmailer (v6.3.0)
+  - Downloading symfony/polyfill-php81 (v1.27.0)
+  - Downloading ramsey/collection (1.2.2)
+  - Downloading brick/math (0.9.3)
+  - Downloading ramsey/uuid (4.2.3)
+  - Downloading psr/simple-cache (1.0.1)
+  - Downloading opis/closure (3.6.3)
+  - Downloading symfony/translation-contracts (v2.5.2)
+  - Downloading symfony/translation (v5.4.24)
+  - Downloading nesbot/carbon (2.68.1)
+  - Downloading league/mime-type-detection (1.12.0)
+  - Downloading league/flysystem (1.1.10)
+  - Downloading league/commonmark (1.6.7)
+  - Downloading laravel/serializable-closure (v1.3.1)
+  - Downloading laravel/framework (v8.83.27)
+  - Downloading facade/ignition-contracts (1.0.2)
+  - Downloading facade/flare-client-php (1.10.0)
+  - Downloading facade/ignition (2.17.7)
+  - Downloading fakerphp/faker (v1.20.0)
+  - Downloading asm89/stack-cors (v2.1.1)
+  - Downloading fruitcake/laravel-cors (v2.2.0)
+  - Downloading psr/http-message (2.0)
+  - Downloading psr/http-client (1.0.2)
+  - Downloading ralouphie/getallheaders (3.0.3)
+  - Downloading psr/http-factory (1.0.2)
+  - Downloading guzzlehttp/psr7 (2.6.0)
+  - Downloading guzzlehttp/promises (2.0.1)
+  - Downloading guzzlehttp/guzzle (7.7.0)
+  - Downloading laravel/sail (v1.19.0)
+  - Downloading laravel/sanctum (v2.15.1)
+  - Downloading nikic/php-parser (v4.16.0)
+  - Downloading psy/psysh (v0.11.20)
+  - Downloading laravel/tinker (v2.8.1)
+  - Downloading hamcrest/hamcrest-php (v2.0.1)
+  - Downloading mockery/mockery (1.6.6)
+  - Downloading filp/whoops (2.15.3)
+  - Downloading nunomaduro/collision (v5.11.0)
+  - Downloading sebastian/version (3.0.2)
+  - Downloading sebastian/type (3.2.1)
+  - Downloading sebastian/resource-operations (3.0.3)
+  - Downloading sebastian/recursion-context (4.0.5)
+  - Downloading sebastian/object-reflector (2.0.4)
+  - Downloading sebastian/object-enumerator (4.0.4)
+  - Downloading sebastian/global-state (5.0.6)
+  - Downloading sebastian/exporter (4.0.5)
+  - Downloading sebastian/environment (5.1.5)
+  - Downloading sebastian/diff (4.0.5)
+  - Downloading sebastian/comparator (4.0.8)
+  - Downloading sebastian/code-unit (1.0.8)
+  - Downloading sebastian/cli-parser (1.0.1)
+  - Downloading phpunit/php-timer (5.0.3)
+  - Downloading phpunit/php-text-template (2.0.4)
+  - Downloading phpunit/php-invoker (3.1.1)
+  - Downloading phpunit/php-file-iterator (3.0.6)
+  - Downloading theseer/tokenizer (1.2.1)
+  - Downloading sebastian/lines-of-code (1.0.3)
+  - Downloading sebastian/complexity (2.0.2)
+  - Downloading sebastian/code-unit-reverse-lookup (2.0.3)
+  - Downloading phpunit/php-code-coverage (9.2.27)
+  - Downloading phar-io/version (3.2.1)
+  - Downloading phar-io/manifest (2.0.3)
+  - Downloading myclabs/deep-copy (1.11.1)
+  - Downloading doctrine/instantiator (1.5.0)
+  - Downloading phpunit/phpunit (9.6.10)
+  - Installing doctrine/inflector (2.0.8): Extracting archive
+  - Installing doctrine/lexer (1.2.3): Extracting archive
+  - Installing symfony/polyfill-ctype (v1.27.0): Extracting archive
+  - Installing webmozart/assert (1.11.0): Extracting archive
+  - Installing dragonmantank/cron-expression (v3.3.3): Extracting archive
+  - Installing symfony/polyfill-php80 (v1.27.0): Extracting archive
+  - Installing symfony/polyfill-mbstring (v1.27.0): Extracting archive
+  - Installing symfony/var-dumper (v5.4.26): Extracting archive
+  - Installing symfony/polyfill-intl-normalizer (v1.27.0): Extracting archive
+  - Installing symfony/polyfill-intl-grapheme (v1.27.0): Extracting archive
+  - Installing symfony/string (v5.4.26): Extracting archive
+  - Installing symfony/deprecation-contracts (v2.5.2): Extracting archive
+  - Installing psr/container (1.1.1): Extracting archive
+  - Installing symfony/service-contracts (v2.5.2): Extracting archive
+  - Installing symfony/polyfill-php73 (v1.27.0): Extracting archive
+  - Installing symfony/console (v5.4.26): Extracting archive
+  - Installing psr/log (1.1.4): Extracting archive
+  - Installing monolog/monolog (2.9.1): Extracting archive
+  - Installing voku/portable-ascii (1.6.1): Extracting archive
+  - Installing phpoption/phpoption (1.9.1): Extracting archive
+  - Installing graham-campbell/result-type (v1.1.1): Extracting archive
+  - Installing vlucas/phpdotenv (v5.5.0): Extracting archive
+  - Installing symfony/css-selector (v5.4.26): Extracting archive
+  - Installing tijsverkoyen/css-to-inline-styles (2.2.6): Extracting archive
+  - Installing symfony/routing (v5.4.26): Extracting archive
+  - Installing symfony/process (v5.4.26): Extracting archive
+  - Installing symfony/polyfill-php72 (v1.27.0): Extracting archive
+  - Installing symfony/polyfill-intl-idn (v1.27.0): Extracting archive
+  - Installing symfony/mime (v5.4.26): Extracting archive
+  - Installing symfony/http-foundation (v5.4.26): Extracting archive
+  - Installing psr/event-dispatcher (1.0.0): Extracting archive
+  - Installing symfony/event-dispatcher-contracts (v2.5.2): Extracting archive
+  - Installing symfony/event-dispatcher (v5.4.26): Extracting archive
+  - Installing symfony/error-handler (v5.4.26): Extracting archive
+  - Installing symfony/http-kernel (v5.4.27): Extracting archive
+  - Installing symfony/finder (v5.4.27): Extracting archive
+  - Installing symfony/polyfill-iconv (v1.27.0): Extracting archive
+  - Installing egulias/email-validator (2.1.25): Extracting archive
+  - Installing swiftmailer/swiftmailer (v6.3.0): Extracting archive
+  - Installing symfony/polyfill-php81 (v1.27.0): Extracting archive
+  - Installing ramsey/collection (1.2.2): Extracting archive
+  - Installing brick/math (0.9.3): Extracting archive
+  - Installing ramsey/uuid (4.2.3): Extracting archive
+  - Installing psr/simple-cache (1.0.1): Extracting archive
+  - Installing opis/closure (3.6.3): Extracting archive
+  - Installing symfony/translation-contracts (v2.5.2): Extracting archive
+  - Installing symfony/translation (v5.4.24): Extracting archive
+  - Installing nesbot/carbon (2.68.1): Extracting archive
+  - Installing league/mime-type-detection (1.12.0): Extracting archive
+  - Installing league/flysystem (1.1.10): Extracting archive
+  - Installing league/commonmark (1.6.7): Extracting archive
+  - Installing laravel/serializable-closure (v1.3.1): Extracting archive
+  - Installing laravel/framework (v8.83.27): Extracting archive
+  - Installing facade/ignition-contracts (1.0.2): Extracting archive
+  - Installing facade/flare-client-php (1.10.0): Extracting archive
+  - Installing facade/ignition (2.17.7): Extracting archive
+  - Installing fakerphp/faker (v1.20.0): Extracting archive
+  - Installing asm89/stack-cors (v2.1.1): Extracting archive
+  - Installing fruitcake/laravel-cors (v2.2.0): Extracting archive
+  - Installing psr/http-message (2.0): Extracting archive
+  - Installing psr/http-client (1.0.2): Extracting archive
+  - Installing ralouphie/getallheaders (3.0.3): Extracting archive
+  - Installing psr/http-factory (1.0.2): Extracting archive
+  - Installing guzzlehttp/psr7 (2.6.0): Extracting archive
+  - Installing guzzlehttp/promises (2.0.1): Extracting archive
+  - Installing guzzlehttp/guzzle (7.7.0): Extracting archive
+  - Installing laravel/sail (v1.19.0): Extracting archive
+  - Installing laravel/sanctum (v2.15.1): Extracting archive
+  - Installing nikic/php-parser (v4.16.0): Extracting archive
+  - Installing psy/psysh (v0.11.20): Extracting archive
+  - Installing laravel/tinker (v2.8.1): Extracting archive
+  - Installing hamcrest/hamcrest-php (v2.0.1): Extracting archive
+  - Installing mockery/mockery (1.6.6): Extracting archive
+  - Installing filp/whoops (2.15.3): Extracting archive
+  - Installing nunomaduro/collision (v5.11.0): Extracting archive
+  - Installing sebastian/version (3.0.2): Extracting archive
+  - Installing sebastian/type (3.2.1): Extracting archive
+  - Installing sebastian/resource-operations (3.0.3): Extracting archive
+  - Installing sebastian/recursion-context (4.0.5): Extracting archive
+  - Installing sebastian/object-reflector (2.0.4): Extracting archive
+  - Installing sebastian/object-enumerator (4.0.4): Extracting archive
+  - Installing sebastian/global-state (5.0.6): Extracting archive
+  - Installing sebastian/exporter (4.0.5): Extracting archive
+  - Installing sebastian/environment (5.1.5): Extracting archive
+  - Installing sebastian/diff (4.0.5): Extracting archive
+  - Installing sebastian/comparator (4.0.8): Extracting archive
+  - Installing sebastian/code-unit (1.0.8): Extracting archive
+  - Installing sebastian/cli-parser (1.0.1): Extracting archive
+  - Installing phpunit/php-timer (5.0.3): Extracting archive
+  - Installing phpunit/php-text-template (2.0.4): Extracting archive
+  - Installing phpunit/php-invoker (3.1.1): Extracting archive
+  - Installing phpunit/php-file-iterator (3.0.6): Extracting archive
+  - Installing theseer/tokenizer (1.2.1): Extracting archive
+  - Installing sebastian/lines-of-code (1.0.3): Extracting archive
+  - Installing sebastian/complexity (2.0.2): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (2.0.3): Extracting archive
+  - Installing phpunit/php-code-coverage (9.2.27): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.3): Extracting archive
+  - Installing myclabs/deep-copy (1.11.1): Extracting archive
+  - Installing doctrine/instantiator (1.5.0): Extracting archive
+  - Installing phpunit/phpunit (9.6.10): Extracting archive
+78 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Package fruitcake/laravel-cors is abandoned, you should avoid using it. No replacement was suggested.
+Package swiftmailer/swiftmailer is abandoned, you should avoid using it. Use symfony/mailer instead.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: facade/ignition
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: laravel/sail
+Discovered Package: laravel/sanctum
+Discovered Package: laravel/tinker
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+76 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+No publishable resources for tag [laravel-assets].
+Publishing complete.
+No security vulnerability advisories found
+> @php artisan key:generate --ansi
+Application key set successfully.
+
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker-compose up -d
+Pulling db (mariadb:10.4)...
+10.4: Pulling from library/mariadb
+7007490126ef: Already exists
+4d07cf421114: Pull complete
+7f49892c3e51: Pull complete
+c5daef2619c3: Pull complete
+4842f413d378: Pull complete
+01533520d8e4: Pull complete
+77d9dce8ccb4: Pull complete
+5a6da9eb8383: Pull complete
+7c4ad5662954: Pull complete
+Digest: sha256:3ba1ae15411e6505055f07a780c34efdc3c8ff1eab8ee899edfc060afa68effe
+Status: Downloaded newer image for mariadb:10.4
+Creating laravel-db  ... done
+Creating laravel-php ... done
+
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker ps
+CONTAINER ID        IMAGE                          COMMAND                  CREATED             STATUS              PORTS                    NAMES
+f264023b20f7        laravel_php                    "docker-php-entrypoi…"   8 seconds ago       Up 7 seconds        0.0.0.0:8080->80/tcp     laravel-php
+5e51240487e5        mariadb:10.4                   "docker-entrypoint.s…"   9 seconds ago       Up 8 seconds        0.0.0.0:3306->3306/tcp   laravel-db
+796d152b617c        node-express-docker_node-app   "docker-entrypoint.s…"   2 minutes ago       Up About a minute   0.0.0.0:3000->3000/tcp   node-express-docker_node-app_1
+
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker stop 796d152b617c
+796d152b617c
+
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
+f264023b20f7        laravel_php         "docker-php-entrypoi…"   41 seconds ago      Up 40 seconds       0.0.0.0:8080->80/tcp   laravel-php
+
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker ps -a
+CONTAINER ID        IMAGE                          COMMAND                  CREATED             STATUS                        PORTS                  NAMES
+f264023b20f7        laravel_php                    "docker-php-entrypoi…"   57 seconds ago      Up 56 seconds                 0.0.0.0:8080->80/tcp   laravel-php
+5e51240487e5        mariadb:10.4                   "docker-entrypoint.s…"   58 seconds ago      Exited (1) 43 seconds ago                            laravel-db
+796d152b617c        node-express-docker_node-app   "docker-entrypoint.s…"   3 minutes ago       Exited (137) 18 seconds ago                          node-express-docker_node-app_1
+a4231041fd90        laravel_php                    "docker-php-entrypoi…"   10 minutes ago      Exited (0) 2 minutes ago                             laravel_php_run_47a2e3080f67
+9038a1fffe44        wordpress:5                    "docker-entrypoint.s…"   21 hours ago        Exited (0) 21 hours ago                              wordpress-wp
+ea56b1efbe5e        dockerfile-env-nginx           "nginx -g 'daemon of…"   22 hours ago        Exited (0) 22 hours ago                              dockerfile-env-nginx
+c20e238751e2        dockerfile-copy-nginx          "nginx -g 'daemon of…"   22 hours ago        Exited (0) 22 hours ago                              dockerfile-copy-nginx
+392f1b423b4b        dockerfile-run-nginx           "nginx -g 'daemon of…"   22 hours ago        Exited (0) 22 hours ago                              dockerfile-run-nginx
+90642f7b8c83        nginx:1.16                     "nginx -g 'daemon of…"   24 hours ago        Exited (0) 24 hours ago                              mynginx
+e0469ff8cb0d        node-docker-example_node-app   "docker-entrypoint.s…"   25 hours ago        Exited (137) 25 hours ago                            node-docker-example_node-app_1
+cbc7027cf219        hello-world                    "/hello"                 2 days ago          Exited (0) 2 days ago                                helloTest
+7563b9a4f314        centos:8                       "/bin/bash"              2 days ago          Exited (0) 24 hours ago                              mycentos
+
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker logs laravel-db
+2023-08-13 22:13:58+09:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.4.30+maria~ubu2004 started.
+2023-08-13 22:13:59+09:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2023-08-13 22:13:59+09:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.4.30+maria~ubu2004 started.
+2023-08-13 22:13:59+09:00 [Note] [Entrypoint]: Initializing database files
+2023-08-13 22:13:59 0 [Warning] InnoDB: Failed to set O_DIRECT on file./ibdata1; CREATE: Invalid argument, continuing anyway. O_DIRECT is known to result in 'Invalid argument' on Linux on tmpfs, see MySQL Bug#26662.
+2023-08-13 22:14:10 0x7fe7b042c7c0  InnoDB: Assertion failure in file /home/buildbot/buildbot/build/mariadb-10.4.30/storage/innobase/os/os0file.cc line 2043
+InnoDB: Failing assertion: ret != -EINVAL
+InnoDB: We intentionally generate a memory trap.
+InnoDB: Submit a detailed bug report to https://jira.mariadb.org/
+InnoDB: If you get repeated assertion failures or crashes, even
+InnoDB: immediately after the mysqld startup, there may be
+InnoDB: corruption in the InnoDB tablespace. Please refer to
+InnoDB: https://mariadb.com/kb/en/library/innodb-recovery-modes/
+InnoDB: about forcing recovery.
+230813 22:14:10 [ERROR] mysqld got signal 6 ;
+This could be because you hit a bug. It is also possible that this binary
+or one of the libraries it was linked against is corrupt, improperly built,
+or misconfigured. This error can also be caused by malfunctioning hardware.
+
+To report this bug, see https://mariadb.com/kb/en/reporting-bugs
+
+We will try our best to scrape up some info that will hopefully help
+diagnose the problem, but since we have already crashed,
+something is definitely wrong and this may fail.
+
+Server version: 10.4.30-MariaDB-1:10.4.30+maria~ubu2004 source revision: 928012a27ae2d1549f1b3e6975b9d22652bbea3a
+key_buffer_size=134217728
+read_buffer_size=2097152
+max_used_connections=0
+max_threads=102
+thread_count=0
+It is possible that mysqld could use up to
+key_buffer_size + (read_buffer_size + sort_buffer_size)*max_threads = 760270 K  bytes of memory
+Hope that's ok; if not, decrease some variables in the equation.
+
+Thread pointer: 0x0
+Attempting backtrace. You can use the following information to find out
+where mysqld died. If you see no messages after this, something went
+terribly wrong...
+stack_bottom = 0x0 thread_stack 0x49000
+/usr/sbin/mysqld(my_print_stacktrace+0x32)[0x564246435252]
+/usr/sbin/mysqld(handle_fatal_signal+0x55d)[0x564245ec876d]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14420)[0x7fe7b0b01420]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fe7b060500b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b)[0x7fe7b05e4859]
+/usr/sbin/mysqld(+0x5c5218)[0x564245ba4218]
+/usr/sbin/mysqld(+0x5a677e)[0x564245b8577e]
+/usr/sbin/mysqld(+0xc2bf43)[0x56424620af43]
+/usr/sbin/mysqld(+0xd8639e)[0x56424636539e]
+/usr/sbin/mysqld(+0xc11f32)[0x5642461f0f32]
+/usr/sbin/mysqld(+0xc126f0)[0x5642461f16f0]
+/usr/sbin/mysqld(+0xc131fa)[0x5642461f21fa]
+/usr/sbin/mysqld(+0x5bc13a)[0x564245b9b13a]
+/usr/sbin/mysqld(+0x5bd308)[0x564245b9c308]
+/usr/sbin/mysqld(+0xbab850)[0x56424618a850]
+/usr/sbin/mysqld(_Z24ha_initialize_handlertonP13st_plugin_int+0x70)[0x564245ecbd80]
+/usr/sbin/mysqld(+0x6ef6a5)[0x564245cce6a5]
+/usr/sbin/mysqld(_Z11plugin_initPiPPci+0x8f6)[0x564245ccf9b6]
+/usr/sbin/mysqld(+0x60e4c5)[0x564245bed4c5]
+/usr/sbin/mysqld(_Z11mysqld_mainiPPc+0x405)[0x564245bf3185]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7fe7b05e6083]
+/usr/sbin/mysqld(_start+0x2e)[0x564245be733e]
+The manual page at https://mariadb.com/kb/en/how-to-produce-a-full-stack-trace-for-mysqld/ contains
+information that should help you find out what is causing the crash.
+Writing a core file...
+Working directory at /var/lib/mysql
+Resource Limits:
+Limit                     Soft Limit           Hard Limit           Units
+Max cpu time              unlimited            unlimited            seconds
+Max file size             unlimited            unlimited            bytes
+Max data size             unlimited            unlimited            bytes
+Max stack size            8388608              unlimited            bytes
+Max core file size        unlimited            unlimited            bytes
+Max resident set          unlimited            unlimited            bytes
+Max processes             unlimited            unlimited            processes
+Max open files            1048576              1048576              files
+Max locked memory         65536                65536                bytes
+Max address space         unlimited            unlimited            bytes
+Max file locks            unlimited            unlimited            locks
+Max pending signals       3724                 3724                 signals
+Max msgqueue size         819200               819200               bytes
+Max nice priority         0                    0
+Max realtime priority     0                    0
+Max realtime timeout      unlimited            unlimited            us
+Core pattern: core
+
+Kernel version: Linux version 4.19.130-boot2docker (root@3e8c56dabc1e) (gcc version 8.3.0 (Debian 8.3.0-6)) #1 SMP Mon Jun 29 23:52:55 UTC 2020
+
+Aborted
+
+Installation of system tables failed!  Examine the logs in
+/var/lib/mysql/ for more information.
+
+The problem could be conflicting information in an external
+my.cnf files. You can ignore these by doing:
+
+    shell> /usr/bin/mysql_install_db --defaults-file=~/.my.cnf
+
+You can also try to start the mysqld daemon with:
+
+    shell> /usr/sbin/mysqld --skip-grant-tables --general-log &
+
+and use the command line tool /usr/bin/mysql
+to connect to the mysql database and look at the grant tables:
+
+    shell> /usr/bin/mysql -u root mysql
+    mysql> show tables;
+
+Try 'mysqld --help' if you have problems with paths.  Using
+--general-log gives you a log in /var/lib/mysql/ that may be helpful.
+
+The latest information about mysql_install_db is available at
+https://mariadb.com/kb/en/installing-system-tables-mysql_install_db
+You can find the latest source at https://downloads.mariadb.org and
+the maria-discuss email list at https://launchpad.net/~maria-discuss
+
+Please check all of the above before submitting a bug report
+at http://mariadb.org/jira
+
+
+******@*********** ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$
