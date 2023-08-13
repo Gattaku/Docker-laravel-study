@@ -1,0 +1,52 @@
+*****@********* ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+cb15994f8c5f        laravel_php         "docker-php-entrypoi…"   7 seconds ago       Up 6 seconds        0.0.0.0:8080->80/tcp     laravel-php
+1c3b798302f6        mariadb:10.4        "docker-entrypoint.s…"   8 seconds ago       Up 6 seconds        0.0.0.0:3306->3306/tcp   laravel-db
+
+*****@********* ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ vi source/.env
+
+*****@********* ~/OneDrive/デスクトップ/Develop/udemy/Docker_uchida/test2/udemy-docker/laravel (main)
+$ docker exec -it laravel-php bash
+root@*************:/var/www/html# php artisan migrate
+
+   Illuminate\Database\QueryException
+
+  SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known (SQL: select * from information_schema.tables where table_schema = laravel and table_name = migrations and table_type = 'BASE TABLE')
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:712
+    708▕         // If an exception occurs when attempting to run a query, we'll format the error
+    709▕         // message to include the bindings with SQL, which will make this exception a
+    710▕         // lot more helpful to the developer instead of just the database's errors.
+    711▕         catch (Exception $e) {
+  ➜ 712▕             throw new QueryException(
+    713▕                 $query, $this->prepareBindings($bindings), $e
+    714▕             );
+    715▕         }
+    716▕     }
+
+      +36 vendor frames
+  37  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+root@*************:/var/www/html# php artisan migrate:rollback
+
+   Illuminate\Database\QueryException
+
+  SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known (SQL: select max(`batch`) as aggregate from `migrations`)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:712
+    708▕         // If an exception occurs when attempting to run a query, we'll format the error
+    709▕         // message to include the bindings with SQL, which will make this exception a
+    710▕         // lot more helpful to the developer instead of just the database's errors.
+    711▕         catch (Exception $e) {
+  ➜ 712▕             throw new QueryException(
+    713▕                 $query, $this->prepareBindings($bindings), $e
+    714▕             );
+    715▕         }
+    716▕     }
+
+      +41 vendor frames
+  42  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+root@*************:/var/www/html#
